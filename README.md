@@ -2,7 +2,7 @@
 E-Cell Group Task ( Group 1 )
 
 Members :
-1) Kadam Tripathi
+1) Kardam Tripathi
 2) Aditi
 3) Tanushree Gupta
 4) Sumit Choudhary
