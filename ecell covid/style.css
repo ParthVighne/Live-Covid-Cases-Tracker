@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  text-align: left;
+}
+
+h1 {
+  color: rgb(53, 145, 242);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3rem 0rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+}
+
+.symptoms {
+  background-color: #A3E4DB;
+}
+
+.imgContainer {
+  display: grid;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.imgContainer img {
+  max-width: 100%;
+}
+
+.precaution {
+  background-color: #93FFD8;
+}
+
+.contact {
+  background-color: #CFFFDC;
+}
+
+.card-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3590b8;
+  height: 20rem;
+  padding: 1.6rem;
+  margin: 2px;
+  transform: scale(.95);
+  transition: 0.7s all;
+  gap: 1rem;
+  text-align: center;
+}
+
+.card:hover{
+    background-color: #0e384a;
+    transform: scale(1);
+}
+
+.card i{
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+.card a{
+  /* text-decoration: none; */
+  color: white;
+}
