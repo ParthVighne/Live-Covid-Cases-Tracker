@@ -13,7 +13,6 @@
   border: none;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.16, 0.8, 0.62, 1.52);
-  text-transform: capitalize;
 }
 
 *::selection {
@@ -105,12 +104,13 @@ header {
 .home .content h3 {
   color: #666;
   font-size: 5rem;
+  padding: 0 19px;
 }
 
 .home .content p {
   color: #999;
   font-size: 2rem;
-  padding: 1rem 0;
+  padding: 1rem 22px;
 }
 .content span#covid img {
   width: 6rem;
@@ -313,7 +313,7 @@ h1.count {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 818px) {
   #menu {
     display: block;
   }
@@ -326,11 +326,13 @@ h1.count {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   html {
     font-size: 50%;
   }
-
+  .home .content h3 {
+    font-size: 3.5rem;
+  }
   section {
     padding: 0 3%;
     padding-top: 9rem;
@@ -342,5 +344,10 @@ h1.count {
   }
   .cases p {
     font-size: 1rem;
+  }
+}
+@media (max-width: 363px){
+  .home .content h3{
+    font-size: 3rem;
   }
 }
