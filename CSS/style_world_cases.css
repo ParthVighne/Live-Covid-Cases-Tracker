@@ -1,0 +1,108 @@
+/* Feel free to do the Final adjustment */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  border: 1px solid red; /* just for reference, remove when finalized */
+  margin: 3px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header nav {
+  border: 1px solid green; /* just for reference, remove when finalized */
+  width: 100%;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+header h3 {
+  margin: 10px;
+  padding: 10px;
+  font-size: 69px;
+  color: #0062e2;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 10px 40px 20px;
+  padding: 20px 10px;
+  width: auto;
+  align-items: stretch;
+  background-color: #0062e2;
+  color: aliceblue;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.info:hover {
+  background-color: #3a7bd1;
+}
+
+.info h4 {
+  margin: 20px;
+  padding: 5px;
+  font-size: 40px;
+}
+
+.info p {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+  font-size: 22px;
+  width: 55%;
+  word-spacing: 3px;
+}
+
+#earth {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 400px;
+  height: 400px;
+}
+
+.world_info {
+  background-color: #0062e2;
+  color: aliceblue;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 10px 40px 20px;
+  padding: 20px 10px;
+  width: auto;
+  align-items: stretch;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.world_info:hover {
+  background-color: #3a7bd1;
+}
+
+.world_info h4 {
+  margin: 20px;
+  padding: 5px;
+  font-size: 40px;
+}
+
+.world_info p {
+  display: inline-block;
+  word-spacing: 3px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 22px;
+  width: 55%;
+}
