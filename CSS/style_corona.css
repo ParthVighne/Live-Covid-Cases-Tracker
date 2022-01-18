@@ -1,43 +1,360 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Muli", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root{
+    --red:#FF4F5B;
 }
 
-.nav_style {
-  background-color: rgba(100, 148, 237, 0.123);
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .3s cubic-bezier(.16,.8,.62,1.52);
+    text-transform: capitalize;
 }
 
-.nav_style a {
-  color: cornflowerblue;
+*::selection{
+    background:var(--red);
+    color:#fff;
 }
 
-/* <!-- *******corona_update --> */
-
-.main header {
-  height: 450px;
-  width: 100%;
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-.rightside h1 {
-  font-size: 3rem;
-  color: blue;
+html::-webkit-scrollbar{
+    width:1.3rem;
 }
 
-.corona_update {
-  margin: 0 0 30px 0;
+html::-webkit-scrollbar-track{
+    background: #fff;
 }
 
-.corona_update h3 {
-  color: rgba(218, 165, 32, 0.637);
+html::-webkit-scrollbar-thumb{
+    background: #000383;
 }
 
-.corona_update h1 {
-  font-size: 4rem;
-  text-align: center;
+body{
+    background:#f9f9f9;
 }
 
-.sub_section {
-  background-color: rgba(152, 100, 237, 0.123);
+section{
+    min-height: 100vh;
+    padding:0 7%;
+    padding-top: 9rem;
+}
+
+
+
+
+
+.heading{
+    font-size: 3rem;
+    color:#666;
+}
+
+.heading span{
+    color:var(--red);
+}
+
+
+header{
+    width:100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:2.5rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+
+#menu{
+    font-size: 3rem;
+    color:#999;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home .image{
+    flex:1 1 40rem;
+}
+
+.home .image img{
+    width:100%;
+}
+
+.home .content{
+    flex:1 1 40rem;
+}
+
+.home .content span{
+    color:var(--red);
+    font-size: 2.5rem;
+}
+
+.home .content h3{
+    color:#666;
+    font-size: 5rem;
+}
+
+.home .content p{
+    color:#999;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+.content span#covid img{
+    width: 6rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.content span#covid img:hover{
+    transform: rotate(360deg);
+}
+.corona_update{
+    margin:0 0 30px 0;
+
+}  
+.corona_update h3{  
+    color: rgba(218, 165, 32, 0.637);
+}
+.corona_update h1{
+    font-size: 4rem;  text-align:center;
+}
+h1.count{
+    align-items: center;
+    text-align: center;
+    margin: 0rem;
+    padding: 0px;
+}
+#cases-heading{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+#cases-box{
+    background-color:#000383;
+    color: #fff;
+    width: 100%;
+    display: inline-flex;
+    margin: 0rem;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.cases{
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.cases:hover{
+    color: #000;
+    background-color: #fff;
+    border-radius: 21px;
+}
+
+.protect .heading{
+    text-align: center;
+    padding:1rem;
+}
+
+.protect .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.protect .box-container .box{
+    background:#fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding:2rem;
+    margin:2rem;
+    width:34rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.protect .box-container .box img{
+    height: 17rem;
+    width:17rem;
+}
+
+.protect .box-container .box h3{
+    font-size: 2.5rem;
+    color:#666;
+    padding:1rem 0;
+}
+
+.protect .box-container .box p{
+    font-size: 1.4rem;
+    color:#999;
+    padding:.5rem;
+}
+
+.protect .box-container .box:hover{
+    transform:translateY(-1rem);
+    border: 2px solid #000383;
+}
+
+.symtoms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.symtoms .content{
+    flex:1 1 40rem;
+}
+
+.symtoms .image{
+    flex:1 1 40rem;
+}
+
+.symtoms .image img{
+    width:100%;
+}
+
+.symtoms .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:1rem 0;
+}
+
+.symtoms .content ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.symtoms .content ul .two{
+    padding-left: 4.5rem;
+}
+
+.symtoms .content ul li{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color:#666;
+    padding: .5rem 0;
+}
+
+.prevent{
+    background:#000383;
+}
+
+.prevent .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.prevent .row .image{
+    flex:1 1 37rem;
+    height:35rem;
+    text-align: center;
+}
+
+.prevent .row .image img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.prevent .row .content{
+    padding:2rem 0;
+    flex:1 1 37rem;
+    margin: 2rem;
+}
+
+.prevent .row .content .heading{
+    color:#fff;
+}
+
+.prevent .row .content p{
+    font-size: 1.7rem;
+    color:#fff;
+    padding:1rem 0;
+}
+
+.prevent .row .content ul li{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color:#000383;
+    padding:.5rem 0;
+}
+
+
+.carousel-inner{
+    margin-top: 3rem;
+}
+.carousel-inner .item img{
+    width: 80%;
+    border-radius: 0;
+    margin-left: 10%;
+}
+/* Media Queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu{
+        display: block;
+    }
+    .home .content{
+        text-align: center;
+    }
+
+    .prevent .row:last-child{
+        flex-flow: column-reverse;
+    }
+
+}
+
+@media (max-width:500px){
+
+    html{
+        font-size: 50%;
+    }
+
+    section{
+        padding:0 3%;
+        padding-top: 9rem;
+    }
+
+}
+@media (max-width:649px){
+  
+    h1.count{
+        font-size: 2rem;
+        
+    }
+    .cases p{
+        font-size: 1rem;
+    }
 }
