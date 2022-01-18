@@ -20,7 +20,7 @@ header nav {
   padding: 0px;
 }
 
-header h3 {
+header h4 {
   margin: 10px;
   padding: 10px;
   font-size: 69px;
@@ -52,6 +52,7 @@ header h3 {
   margin: 20px;
   padding: 5px;
   font-size: 40px;
+  text-align: justify;
 }
 
 .info p {
@@ -96,6 +97,7 @@ header h3 {
   margin: 20px;
   padding: 5px;
   font-size: 40px;
+  text-align: justify;
 }
 
 .world_info p {
