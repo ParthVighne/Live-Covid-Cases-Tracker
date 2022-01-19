@@ -15,10 +15,11 @@ h1 {
   padding: 3rem 0rem;
   font-family: "Arial", sans-serif;
   font-size: 2.5rem;
+  margin-top: 0;
 }
 
-.symptoms {
-  background-color: #a3e4db;
+.symptoms{
+  background-color: #cfffdc;
 }
 
 .imgContainer {
@@ -30,10 +31,17 @@ h1 {
 
 .imgContainer img {
   max-width: 100%;
+  border-radius: 2rem;
+  animation: animate__headShake;
+  transform: scale(0.85); 
+  transition: 1s all;
+}
+.imgContainer img:hover {
+  transform: scale(1);
 }
 
 .precaution {
-  background-color: #93ffd8;
+  background-color: #000383;
 }
 
 .contact {
@@ -75,6 +83,5 @@ h1 {
 }
 
 .card a {
-  /* text-decoration: none; */
   color: white;
 }
