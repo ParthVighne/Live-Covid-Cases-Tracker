@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Cases</title>
+    <title>Contact</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -20,12 +20,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
-    <link rel="stylesheet" href="/CSS/style_world_cases.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/nav2.css">
     <link rel="stylesheet" href="/CSS/footer2.css">
+  
   </head>
+
   <body>
     <nav>
       <input type="checkbox" id="check">
@@ -40,54 +44,52 @@
         <li><a href="index.html">contact</a></li>
       </ul>
     </nav>
-    <header>
-      
-      <div><h4>World Cases</h4></div>
-    </header>
+    <section class="symptoms">
+      <h1><strong>SYMPTOMS</strong></h1>
+      <div class="imgContainer">
+        <img src="/Pictures/Untitled.png" alt="Symptoms" />
+      </div>
+    </section>
+
+    <section class="precaution">
+      <h1><strong>PRECAUTIONS</strong></h1>
+      <div class="imgContainer">
+        <img src="/Pictures/precaution.jpg" alt="Precautions" />
+      </div>
+    </section>
+
+    <section class="contact">
+      <h1><strong>CONTACT US</strong></h1>
+      <div class="card-container">
+        <div class="card">
+          <i class="fas fa-phone-alt"></i>
+          <span>Phone Number</span>
+          <span><a href="tel:+917999888625">+91-7999888625</a></span>
+        </div>
+        <div class="card">
+          <i class="fas fa-paper-plane"></i>
+          <span>E-mail</span>
+          <span
+            ><a href="mailto:covidhelpline@rgpv.com"
+              >covidhelpline@rgpv.com</a
+            ></span
+          >
+        </div>
+        <div class="card">
+          <i class="fas fa-map-signs"></i>
+          <span>Address</span>
+          <span>
+            <a
+              class="my-card-link center"
+              href="https://www.google.com/maps/search/?api=1&query=23.3017418,%2077.3598413"
+              >Rajiv Gandhi Proudyogiki Vishwavidyalaya, Airport Bypass Road,
+              Bhopal, Madhya Pradesh -462033</a
+            >
+          </span>
+        </div>
+      </div>
+    </section>
     
-    <section class="info">
-      <h4>How It Spreads!</h4>
-      <p>
-        The virus can spread from an infected person’s mouth or nose in small
-        liquid particles when they cough, sneeze, speak, sing or breathe. These
-        particles range from larger respiratory droplets to smaller aerosols.
-        You can be infected by breathing in the virus if you are near someone
-        who has COVID-19, or by touching a contaminated surface and then your
-        eyes, nose or mouth. The virus spreads more easily indoors and in
-        crowded settings.
-      </p>
-    </section>
-    <h3 style="text-align: center;"><strong> Live Cases Stats</strong></h3>
-        
-        
-    <div class="table-responsive">
-        <table class="table table-bordered table-striped text-center" id="tbval">
-            <tr>
-                <td>Country</td>
-                <td>Total Confirmed</td>
-                <td>Total Recovery</td>
-                <td>Total Deaths</td>
-                <td>New Confirmed</td>
-                <td>New Recoverd</td>
-                <td>New Deaths</td>
-            </tr>
-            <tbody id="myTable">
-
-            </tbody>
-        </table>
-    </div>
-
-  <img src="/Pictures/covid-map.jpg" id="covid-map">
-
-    <section class="world_info">
-      <h4>World Cases</h4>
-      <p>
-        The virus has now been around for 4 years. It keeps on coming in waves
-        and variants as the world tries to recover in all ways, from financial
-        to emotional. Though the toll it has taken is massive, we continue to
-        fight it and heal ourselves and the ones around us. Whatever it takes.
-      </p>
-    </section>
     <footer class="footer">
       <div class="container bottom_border">
       <div class="row">
@@ -111,6 +113,4 @@
       </div>
   </footer>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="/JavaScript/api_for_livecovidcases.js"></script>
 </html>
